@@ -1,4 +1,4 @@
-<project name="Grosse_JuiceBottlerLab" default="compile" basedir=".">
+<project name="Grosse_BellChoirLab" default="compile" basedir=".">
   <!-- set global properties for this build -->
   <property name="src" location="src"/>
   <property name="dist" location="dist"/>
@@ -16,16 +16,16 @@
 
   <!--compiles jar itself and places in the folder selected-->
   <target name="jar" depends="init,compile">
-    <jar destfile="${dist}/Grosse_JuiceBottlerLab.jar" basedir="${dist}/classes">
+    <jar destfile="${dist}/Grosse_BellChoirLab.jar" basedir="${dist}/classes">
       <manifest>
-        <attribute name="Main-Class" value="juiceBottler/PlantManager"/>
+        <attribute name="Main-Class" value="chamberChoir/Bellbox"/>
       </manifest>
     </jar>
   </target>
 
   <!--runs the jar on a fork-->
   <target name="run" depends="jar">
-    <java jar="${dist}/Grosse_JuiceBottlerLab.jar" fork="true"/>
+    <java jar="${dist}/Grosse_BellChoirLab.jar" fork="true"/>
   </target>
 
   <!--creates a clean command which empties dist folder-->
