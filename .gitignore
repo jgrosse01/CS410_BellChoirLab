@@ -1,6 +1,9 @@
 # Bin files
 /bin/
 
+# Dist files
+/dist/
+
 # Compiled class file
 *.class
 
