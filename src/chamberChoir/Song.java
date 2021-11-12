@@ -257,6 +257,9 @@ public class Song {
 					case "16":
 						length = NoteLength.SIXTEENTH;
 						break;
+					case "32":
+						length = NoteLength.THIRTYSECOND;
+						break;
 					default:
 						// if there is not a valid input for NoteLength, flag that the song is invalid
 						// and error print
